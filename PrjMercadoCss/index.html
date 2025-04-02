@@ -1,53 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="cabecalho">
-      <nav class="menu">
-        <ul class="menu-lista">
-          <li class="lista">inicio</li>
-          <li class="lista">meio</li>
-          <li class="lista">fim</li>
-        </ul>
-      </nav>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Covabra</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+            </ul>
+        </nav>
     </header>
+
     <main>
-      <section class="section1">
-        <article class="artigos1">Lorem ipsum dolor sit amet.</article>
+        <section class="introducao">
+            <h1>Bem-vindo ao Supermercado Covabra</h1>
+            <p>Alimentos de qualidade todos os dias!</p><br>
+            <img src="logo-covabra.webp" alt="Imagem principal do site">
+        </section>
 
-        <article class="artigos1">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti,
-          porro.
-        </article>
-      </section>
+        <section class="produtos">
+            <h2>Conheça Nossos Produtos</h2>
+            <div class="produtos-container">
+                <article class="produto">
+                    <img src="prod01_feijao.webp" alt="Produto 1">
+                    <h3>Feijão Broto Legal Carioca 1kg</h3>
+                    <p>R$ 7,59</p>
+                    <a href="produtos.html">Saiba mais</a>
+                </article>
 
-      <section class="section2">
-        <article class="artigos2">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        </article>
+                <article class="produto">
+                    <img src="prod02_leite.webp" alt="Produto 2">
+                    <h3>Leite Shefa Integral 1l</h3>
+                    <p>3,79</p>
+                    <a href="produtos.html">Saiba mais</a>
+                </article>
 
-        <article class="artigos2">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-        </article>
-      </section>
+                <article class="produto">
+                    <img src="prod03_acucar.webp" alt="Produto 3">
+                    <h3>Açúcar Caravelas Refinado 1kg</h3>
+                    <p>R$ 3,99</p>
+                    <a href="produtos.html">Saiba mais</a>
+                </article>
+            </div>
+        </section>
     </main>
-    <footer class="rodape">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
-      adipisci dolorum! Voluptate odio labore exercitationem harum provident
-      hic, blanditiis voluptatibus ut soluta, illum repellendus dolorem
-      excepturi laborum voluptates impedit nulla molestiae inventore. Labore
-      beatae veritatis error, sit architecto adipisci nemo!
+
+    <footer>
+        <p>&copy; 2025 Covabra. Todos os direitos reservados.</p>
     </footer>
-  </body>
+</body>
 </html>

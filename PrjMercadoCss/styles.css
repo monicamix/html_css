@@ -1,0 +1,164 @@
+/* Definição de variáveis */
+:root {
+    --cor-principal: #1a73e8;
+    --cor-secundaria: #ff9800;
+    --cor-texto: #333;
+    --font-familia: 'Roboto', sans-serif;
+    --largura-maxima: 1200px;
+    --largura-minima: 320px;
+}
+
+/* Resets e Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-familia);
+    color: var(--cor-texto);
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Menu - hover */
+a:hover {
+    background-color: green;
+}
+
+header {
+    background-color: var(--cor-principal);
+    color: white;
+    padding: 20px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    max-width: var(--largura-maxima);
+    margin: 0 auto;
+}
+
+.introducao {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.introducao h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.produtos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.produtos-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.produto {
+    text-align: center;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+}
+
+.produto h3 {
+    margin: 15px 0;
+}
+
+.produto a {
+    text-decoration: none;
+    color: var(--cor-principal);
+    font-weight: bold;
+}
+
+.detalhes-produto {
+    text-align: center;
+}
+
+.detalhes-produto h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.detalhes-produto img {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
+}
+
+.video iframe {
+    max-width: 100%;
+    height: 315px;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 8px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .produtos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produto {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .introducao h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+    
+    .produto {
+        width: 90%;
+    }
+}
