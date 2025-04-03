@@ -1,0 +1,49 @@
+/* Ele muda o layout conforme o tamanho da tela, ajustando a cor do fundo e a disposição do conteúdo. */
+/* Estilos padrão */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: white;
+    margin: 0;
+}
+
+header {
+    background-color:burlywood;
+    color:maroon;
+    padding: 10px;
+}
+
+.section_container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color:burlywood;
+    color: maroon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Media Query para telas menores que 600px */
+@media (max-width: 600px) {
+    body {
+        background-color: lightgray;
+    }
+
+    .section_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 80%;
+    }
+}

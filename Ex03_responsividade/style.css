@@ -1,0 +1,100 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: black;
+    text-align: center;
+}
+
+/* Cabeçalho fixo */
+header {
+    background-color:#022553;
+    color: white;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Estilização do menu */
+nav .menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+nav .menu li {
+    display: inline;
+}
+
+nav .menu li a {
+    text-decoration: none;
+    color: white;
+    /* font-weight: bold; */
+    padding: 10px 15px;
+}
+
+/* Ajustando a seção principal */
+main {
+    padding-top: 80px; /* Para não ficar atrás do cabeçalho fixo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+/* Aplicando display inline na section */
+.content {
+    display: inline; /* As sections agora ficam na mesma linha */
+    background-color: lightblue;
+    padding: 15px;
+    /* border: 2px solid blue; */
+    margin: 10px;
+}
+
+/* Ajuste para texto e imagem */
+.text {
+    font-size: 18px;
+}
+
+.image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #022553;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* 📱 Responsividade para telas menores */
+@media (max-width: 768px) {
+    nav .menu {
+        display: none; /* Esconde o menu para um possível menu*/
+    }
+
+    .content {
+        display: block; /* Para telas menores, volta a ficar empilhado */
+        text-align: center;
+    }
+
+    .image img {
+        width: 80%;
+    }
+}
